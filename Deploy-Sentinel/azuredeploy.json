@@ -152,7 +152,7 @@
             "metadata": {
                 "description": "The location of resources"
             },
-            "defaultValue": "https://raw.githubusercontent.com/joelst/AzLighthouse/main/Deploy-Sentinel/"
+            "defaultValue": "https://raw.githubusercontent.com/stefan968/MSSentinel/main/Deploy-Sentinel/"
         }
     },
     "variables": {
