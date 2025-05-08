@@ -325,7 +325,7 @@
             "properties": {
                 "mode": "Incremental",
                 "templateLink": {
-                    "uri": "[uri(parameters('_artifactsLocation'), 'LinkedTemplates/autoamationAccount.json')]",
+                    "uri": "[uri(parameters('_artifactsLocation'), 'LinkedTemplates/automationAccount.json')]",
                     "contentVersion": "1.0.0.0"
                 },
                 "parameters": {
