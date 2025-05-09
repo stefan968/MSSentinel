@@ -231,9 +231,9 @@
                       "constraints": {
                           "allowedValues": [
                               {
-                                  "label": "Azure Active Directory",
-                                  "description": "The Azure Active Directory solution for Microsoft Sentinel enables you to ingest Azure Active Directory Audit,Sign-in,Provisioning,Risk Events and Risky User/Service Principal logs using Diagnostic Settings into Microsoft Sentinel.",
-                                  "value": "Azure Active Directory"
+                                  "label": "Microsoft Entra ID",
+                                  "description": "The Microsoft Entra ID solution for Microsoft Sentinel enables you to ingest Microsoft Entra ID Audit, Sign-in, Provisioning, Risk Events and Risky User/Service Principal logs using Diagnostic Settings into Microsoft Sentinel.",
+                                  "value": "Microsoft Entra ID"
                               },
                               {
                                   "label": "Azure Activity",
@@ -291,9 +291,9 @@
                                   "value": "Threat Intelligence"
                               },
                               {
-                                "label": "Sophos Endpoint Protection Solution",
+                                "label": "Sophos Endpoint Protection",
                                 "description": "The Sophos Endpoint Protection solution provides the capability to ingest to ingest Sophos events and Sophos alerts into Microsoft Sentinel. Refer to Sophos Central documentation for more information.",
-                                "value": "Sophos Endpoint Protection Solution"
+                                "value": "Sophos Endpoint Protection"
                             }
                           ],
                           "required": false
