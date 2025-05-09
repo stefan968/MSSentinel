@@ -278,14 +278,20 @@
             }
         },
         {
-        "condition": "[contains(parameters('dataConnectorsKind'), 'ThreatIntelligence')]",
-        "type": "Microsoft.OperationalInsights/workspaces/providers/dataConnectors",
-        "apiVersion": "2022-12-01-preview",
-        "kind": "MicrosoftDefenderThreatIntelligence",
-        "name": "[concat(parameters('workspaceName'), '/Microsoft.SecurityInsights/', variables('mdiStandardName'))]",
-        "properties": {
-          "tenantId": "[parameters('tenantId')]"
+            "condition": "[contains(parameters('dataConnectorsKind'), 'ThreatIntelligence')]",
+            "type": "Microsoft.OperationalInsights/workspaces/providers/dataConnectors",
+            "apiVersion": "2020-01-01",
+            "location": "[parameters('location')]",
+            "name": "[concat(parameters('workspaceName'),'/Microsoft.SecurityInsights/',variables('tiName'))]",
+            "kind": "ThreatIntelligence",
+            "properties": {
+                "tenantId": "[parameters('tenantId')]",
+                "dataTypes": {
+                    "indicators": {
+                        "state": "enabled"
+                    }
+                }
+            }
         }
-      }
     ]
 }
