@@ -232,7 +232,7 @@
                       "multiLine": true,
                       "defaultDescription": "A value for selection",
                       "toolTip": "Select the Microsoft solutions that you would like to install",
-                      "defaultValue": [{"value": "Microsoft Entra ID"},{"value": "Azure Activity"},{"value": "Microsoft 365"},{"value": "Microsoft Defender for Cloud"},{"value": "Teams"},{"value": "Threat Intelligence Standard"},{"value": "Sophos Endpoint Protection"}],
+                      "defaultValue": [{"value": "Microsoft Entra ID"},{"value": "Azure Activity"},{"value": "Microsoft 365"},{"value": "Microsoft Defender for Cloud"},{"value": "Teams"},{"value": "Threat Intelligence"},{"value": "Sophos Endpoint Protection"}],
                       "constraints": {
                           "allowedValues": [
                               {
@@ -291,14 +291,9 @@
                                   "value": "Teams"
                               },
                               {
-                                  "label": "Threat Intelligence Standard",
+                                  "label": "Threat Intelligence",
                                   "description": "Ingest threat indicators into Microsoft Sentinel. Threat indicators can be IP addresses, domains, URLs and file hashes and can be used to correlate across log sources for known indicators of compromise and/or indicators of active attack",
-                                  "value": "Threat Intelligence Standard"
-                              },
-                              {
-                                "label": "Threat Intelligence Premium",
-                                "description": "Ingest threat indicators into Microsoft Sentinel. Threat indicators can be IP addresses, domains, URLs and file hashes and can be used to correlate across log sources for known indicators of compromise and/or indicators of active attack",
-                                "value": "Threat Intelligence Premium"
+                                  "value": "Threat Intelligence"
                               },
                               {
                                 "label": "Sophos Endpoint Protection",
