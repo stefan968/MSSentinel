@@ -22,7 +22,7 @@
                 "type": "Microsoft.Common.TextBox",
                 "label": "Resource Group name",
                 "placeholder": "",
-                "defaultValue": "",
+                "defaultValue": "xxx-sentinel-rg-prod-we",
                 "toolTip": "Enter a resource group name",
                 "constraints": {
                     "required": true,
@@ -36,7 +36,7 @@
                 "type": "Microsoft.Common.TextBox",
                 "label": "Workspace Name",
                 "placeholder": "",
-                "defaultValue": "",
+                "defaultValue": "xxx-sentinel-la-prod-we",
                 "toolTip": "The Workspace name should include 4-63 letters, digits or '-'. The '-' shouldn't be the first or the last symbol.",
                 "constraints": {
                     "required": true,
@@ -162,6 +162,7 @@
                       "name": "enableUeba",
                       "type": "Microsoft.Common.CheckBox",
                       "label": "Enable User Entity Behavior Analytics (UEBA)? Global Admin or Security Admin permission required.",
+                      "defaultValue": true
                 "toolTip": "This will only enable synchronization with identity providers. Data sources need to be enabled separately. [Learn more](https://learn.microsoft.com/azure/sentinel/identify-threats-with-entity-behavior-analytics)",
                       "constraints": {
                           "required": false,
@@ -179,7 +180,8 @@
                           "allowedValues": [
                               {
                                   "label": "Azure Active Directory",
-                                  "value": "AzureActiveDirectory"
+                                  "value": "AzureActiveDirectory",
+                                  "defaultvalue": true
                               },
                               {
                                   "label": "Active Directory (requires Microsoft Defender for Identity)",
