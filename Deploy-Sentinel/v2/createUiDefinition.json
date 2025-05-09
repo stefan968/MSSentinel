@@ -176,7 +176,7 @@
                       "placeholder": "Choose identity provider",
                       "multiselect": true,
                       "toolTip": "Select the identity providers that you would like to enable for UEBA",
-                      "defaultValue": [{"value": "Entra ID"}],
+                      "defaultValue": [{"value": "AzureActiveDirectory"}],
                       "constraints": {
                           "allowedValues": [
                               {
@@ -232,7 +232,7 @@
                       "multiLine": true,
                       "defaultDescription": "A value for selection",
                       "toolTip": "Select the Microsoft solutions that you would like to install",
-                      "defaultValue": [{"value": "Microsoft Entra ID"},{"value": "Azure Activity"},{"value": "Microsoft 365"},{"value": "Microsoft Defender for Cloud"},{"value": "Microsoft Teams"},{"value": "Threat Intelligence"},{"value": "Sophos Endpoint Protection"}],
+                      "defaultValue": [{"value": "Microsoft Entra ID"},{"value": "Azure Activity"},{"value": "Microsoft 365"},{"value": "Microsoft Defender for Cloud"},{"value": "Teams"},{"value": "Threat Intelligence"},{"value": "Sophos Endpoint Protection"}],
                       "constraints": {
                           "allowedValues": [
                               {
@@ -316,7 +316,7 @@
                       "multiLine": true,
                       "defaultDescription": "A value for selection",
                       "toolTip": "Select essentials solutions that you would like to install",
-                      "defaultValue": [{"value": "Attacker Tools Threat Protection Essentials"},{"value": "Cloud Identity Threat Protection Essentials"},{"value": "Cloud Service Threat Protection Essentials"},{"value": "Endpoint Threat Protection Essentials"},{"value": "Network Session Essentials"},{"value": "Network Threat Protection Essentials"}],
+                      "defaultValue": [{"value": "Attacker Tools Threat Protection Essentials"},{"value": "Cloud Identity Threat Protection Essentials"},{"value": "Cloud Service Threat Protection Essentials"},{"value": "Endpoint Threat Protection Essentials"},{"value": "Network Session Essentials"},{"value": "Network Threat Protection Essentials"},{"value": "UEBA Essentials"}],
                       "constraints": {
                           "allowedValues": [
                             {
@@ -586,7 +586,8 @@
                           "required": false,
                           "validationMessage": "Enables Scheduled and NRT rules matching any of the selected solutions and connectors"
                       },
-                      "visible": true
+                      "visible": true,
+                      "defaultValue": true
                   },
                   {
                       "name": "severityLevels",
