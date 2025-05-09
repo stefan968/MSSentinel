@@ -176,10 +176,11 @@
                       "placeholder": "Choose identity provider",
                       "multiselect": true,
                       "toolTip": "Select the identity providers that you would like to enable for UEBA",
+                      "defaultValue": [{"value": "Entra ID"}],
                       "constraints": {
                           "allowedValues": [
                               {
-                                  "label": "Azure Active Directory",
+                                  "label": "Entra ID",
                                   "value": "AzureActiveDirectory",
                                   "defaultvalue": true
                               },
@@ -197,6 +198,7 @@
                       "type": "Microsoft.Common.CheckBox",
                       "label": "Enable Sentinel health diagnostics?",
                       "toolTip": "This will enable diagnostics settings for Analytics rules, Data Connectors and Automation rules. [Learn more](https://learn.microsoft.com/azure/sentinel/health-audit)",
+                      "defaultValue": true,
                       "constraints": {
                           "required": false,
                           "validationMessage": "Please select"
@@ -230,6 +232,7 @@
                       "multiLine": true,
                       "defaultDescription": "A value for selection",
                       "toolTip": "Select the Microsoft solutions that you would like to install",
+                      "defaultValue": [{"value": "Microsoft Entra ID"},{"value": "Azure Activity"},{"value": "Microsoft 365"},{"value": "Microsoft Defender for Cloud"},{"value": "Microsoft Teams"},{"value": "Threat Intelligence"},{"value": "Sophos Endpoint Protection"}],
                       "constraints": {
                           "allowedValues": [
                               {
@@ -313,6 +316,7 @@
                       "multiLine": true,
                       "defaultDescription": "A value for selection",
                       "toolTip": "Select essentials solutions that you would like to install",
+                      "defaultValue": [{"value": "Attacker Tools Threat Protection Essentials"},{"value": "Cloud Identity Threat Protection Essentials"},{"value": "Cloud Service Threat Protection Essentials"},{"value": "Endpoint Threat Protection Essentials"},{"value": "Network Session Essentials"},{"value": "Network Threat Protection Essentials"}],
                       "constraints": {
                           "allowedValues": [
                             {
@@ -420,10 +424,11 @@
                       "multiLine": true,
                       "defaultDescription": "A value for selection",
                       "toolTip": "Select the data connectors that you would like to enable",
+                      "defaultValue": [{"value": "AzureActiveDirectory"},{"value": "AzureActivity"},{"value": "Microsoft365Defender"},{"value": "MicrosoftDefenderForCloud"},{"value": "Office365"},{"value": "ThreatIntelligence"}],
                       "constraints": {
                           "allowedValues": [
                             {
-                                "label": "Azure Active Directory",
+                                "label": "Entra ID",
                                 "description": "Relevant license and Global Admin or Security Admin permission required.",
                                 "value": "AzureActiveDirectory"
                             },  
