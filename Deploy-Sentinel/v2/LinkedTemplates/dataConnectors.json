@@ -278,21 +278,11 @@
             }
         },
         {
-        "condition": "[contains(parameters('dataConnectorsKind'), 'DefenderThreatIntelligenceStandard')]",
+        "condition": "[contains(parameters('dataConnectorsKind'), 'ThreatIntelligence')]",
         "type": "Microsoft.OperationalInsights/workspaces/providers/dataConnectors",
         "apiVersion": "2022-12-01-preview",
         "kind": "MicrosoftDefenderThreatIntelligence",
         "name": "[concat(parameters('workspaceName'), '/Microsoft.SecurityInsights/', variables('mdiStandardName'))]",
-        "properties": {
-          "tenantId": "[parameters('tenantId')]"
-        }
-      },
-      {
-        "condition": "[contains(parameters('dataConnectorsKind'), 'DefenderThreatIntelligencePremium')]",
-        "type": "Microsoft.OperationalInsights/workspaces/providers/dataConnectors",
-        "apiVersion": "2022-12-01-preview",
-        "kind": "MicrosoftDefenderThreatIntelligencePremium",
-        "name": "[concat(parameters('workspaceName'), '/Microsoft.SecurityInsights/', variables('mdiPremiumName'))]",
         "properties": {
           "tenantId": "[parameters('tenantId')]"
         }
