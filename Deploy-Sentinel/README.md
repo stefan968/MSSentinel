@@ -1,3 +1,11 @@
+# Deploy Sentinel
+Based on the Microsoft Sentinel All in One deployment
+
+Changes:
+-Updated to Microsoft Entra ID
+-Added Sophos Endpoint solution
+-Changed default values in UI
+
 # Microsoft Sentinel All In One
 
 <p align="center">
