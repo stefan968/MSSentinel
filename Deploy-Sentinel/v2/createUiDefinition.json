@@ -424,7 +424,7 @@
                       "multiLine": true,
                       "defaultDescription": "A value for selection",
                       "toolTip": "Select the data connectors that you would like to enable",
-                      "defaultValue": [{"value": "AzureActiveDirectory"},{"value": "AzureActivity"},{"value": "Microsoft365Defender"},{"value": "MicrosoftDefenderForCloud"},{"value": "Office365"},{"value": "ThreatIntelligence"}],
+                      "defaultValue": [{"value": "AzureActiveDirectory"},{"value": "AzureActivity"},{"value": "MicrosoftDefenderForCloud"},{"value": "Office365"},{"value": "ThreatIntelligence"}],
                       "constraints": {
                           "allowedValues": [
                             {
